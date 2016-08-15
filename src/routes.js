@@ -7,5 +7,6 @@ import DealsIndex from './components/deals_index';
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={DealsIndex} />
+    <Route path="/deals" component={DealsIndex} />
   </Route>
 );

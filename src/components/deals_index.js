@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchDeals } from '../actions/index';
 import { Link } from 'react-router';
+import DealItem from './deal_item';
 
 class DealsIndex extends Component {
+
   componentWillMount() {
     this.props.fetchDeals();
   }
@@ -11,26 +13,16 @@ class DealsIndex extends Component {
   renderDeals() {
     return this.props.deals.map((deal) => {
       return (
-        <li className="list-group-item" key={deal.id}>
-          <Link to={"deals/" + deal.id}>
-            <span className="pull-xs-right">{deal.categories}</span>
-            <strong>{deal.title}</strong>
-          </Link>
-        </li>
+        <DealItem key={deal.id} deal={deal} />
       );
     });
   }
 
   render() {
     return (
-      <div>
-        <div className="text-xs-right">
-          <Link to="/deals/new" className="btn btn-primary">
-            Add a Deal
-          </Link>
-        </div>
+      <div className='main-container'>
         <h3>Deals</h3>
-        <ul className="list-group">
+        <ul className="gridfix cf">
           {this.renderDeals()}
         </ul>
       </div>
