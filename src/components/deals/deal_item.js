@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-class DealsItem extends Component {
+class DealItem extends Component {
 
   render() {
     var deal = this.props.deal;
@@ -46,7 +46,7 @@ class DealsItem extends Component {
   }
 }
 
-export default DealsItem;
+export default DealItem;
 
 
 

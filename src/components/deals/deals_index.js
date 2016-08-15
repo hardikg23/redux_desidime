@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchDeals } from '../actions/index';
+import { fetchDeals } from '../../actions/index';
 import { Link } from 'react-router';
 import DealItem from './deal_item';
 

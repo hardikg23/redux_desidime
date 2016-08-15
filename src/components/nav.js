@@ -11,16 +11,16 @@ class Nav extends Component {
             <div className="nav-inner grid-80 tablet-grid-75 grid-parent">
               <ul id="fnav">
                 <li className="drop-menu mega-menu">
-                  <Link to={"categories/"}>Categories</Link>
+                  <Link to={"/categories"}>Categories</Link>
                 </li>
                 <li className="drop-menu mega-menu">
-                  <Link to={"coupons/"}>Coupons</Link>
+                  <Link to={"/coupons"}>Coupons</Link>
                 </li>
                 <li className="drop-menu mega-menu">
-                  <Link to={"deals/"}>Deals</Link>
+                  <Link to={"/deals"}>Deals</Link>
                 </li>
                 <li className="drop-menu mega-menu">
-                  <Link to={"topics/"}>Topics</Link>
+                  <Link to={"/topics"}>Topics</Link>
                 </li>
               </ul>
             </div>
