@@ -8,10 +8,11 @@ export const FETCH_COUPONS = 'FETCH_COUPONS';
 // export const FETCH_POST = 'FETCH_POST';
 // export const DELETE_POST = 'DELETE_POST';
 
-const ROOT_URL = 'http://localhost:4000/';
-const API_KEY = '?key=lkajdsfapipwietpw';
-const CLIENT = '40f966d1bdc4f62edc9adfae6cb44cda93627d94cdfacbbf394daf43b28a92ec'; // dev
-// const CLIENT = '68045fd226ab32029c98bf4533bfa98b3c50423094d292d70ca2702e61a9679b'; // staging
+// const ROOT_URL = 'http://localhost:4000/';
+// const CLIENT = '40f966d1bdc4f62edc9adfae6cb44cda93627d94cdfacbbf394daf43b28a92ec'; // dev
+
+const ROOT_URL = 'http://139.162.46.29/';
+const CLIENT = '68045fd226ab32029c98bf4533bfa98b3c50423094d292d70ca2702e61a9679b'; // staging
 
 
 export function fetchDeals() {
